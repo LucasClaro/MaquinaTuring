@@ -196,7 +196,7 @@ end
 #specify initial tape value and instruction file
 # tm = TuringMachine.new("110011", "Power.json")
 # tm = TuringMachine.new("1010101", "Power.json")
-tm = TuringMachine.new("111x0", "Power.json")
+tm = TuringMachine.new("011100", "Power.json")
 
 #output configuration history
 tm.verbose = true

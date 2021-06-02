@@ -1858,7 +1858,7 @@
 		//read n
 		null,
 		//read y
-		null,
+		{"write": "y","direction": "R","next_state": 68},
 		//read e
 		{"write": "e","direction": "L","next_state": 69}
 	],
@@ -3910,7 +3910,7 @@
 		//read n
 		null,
 		//read y
-		null,
+		{"write": "y","direction": "R","next_state": 144},
 		//read e
 		{"write": "e","direction": "L","next_state": 145}
 	],
@@ -5530,7 +5530,7 @@
 		//read n
 		null,
 		//read y
-		null,
+		{"write": "y","direction": "R","next_state": 205},
 		//read e
 		{"write": "e","direction": "L","next_state": 205}
 	],
@@ -5726,7 +5726,7 @@
 	//state 212
 	[
 		//read 0
-		{"write": 0,"direction": "L","next_state": 223},
+		{"write": 0,"direction": "L","next_state": 226},
 		//read 1
 		null,
 		//read 2
@@ -5775,14 +5775,14 @@
 		//read y
 		null,
 		//read e
-		{"write": 0,"direction": "L","next_state": 223}
+		{"write": 0,"direction": "L","next_state": 226}
 	],
 	//state 214
 	[
 		//read 0
 		{"write": 0,"direction": "R","next_state": 215},
 		//read 1
-		{"write": 1,"direction": "R","next_state": 215},
+		{"write": 1,"direction": "R","next_state": 223},
 		//read 2
 		null,
 		//read 3
@@ -5807,7 +5807,7 @@
 	//state 215
 	[
 		//read 0
-		{"write": 0,"direction": "R","next_state": 216},
+		{"write": 0,"direction": "R","next_state": 215},
 		//read 1
 		{"write": 1,"direction": "R","next_state": 216},
 		//read 2
@@ -5863,7 +5863,7 @@
 		//read 0
 		{"write": 0,"direction": "R","next_state": 218},
 		//read 1
-		{"write": 1,"direction": "R","next_state": 218},
+		{"write": 1,"direction": "R","next_state": 224},
 		//read 2
 		null,
 		//read 3
@@ -5888,7 +5888,7 @@
 	//state 218
 	[
 		//read 0
-		{"write": 0,"direction": "R","next_state": 219},
+		{"write": 0,"direction": "R","next_state": 218},
 		//read 1
 		{"write": 1,"direction": "R","next_state": 219},
 		//read 2
@@ -5944,7 +5944,7 @@
 		//read 0
 		{"write": 0,"direction": "R","next_state": 221},
 		//read 1
-		{"write": 1,"direction": "R","next_state": 221},
+		{"write": 1,"direction": "R","next_state": 225},
 		//read 2
 		null,
 		//read 3
@@ -5969,7 +5969,7 @@
 	//state 221
 	[
 		//read 0
-		{"write": 0,"direction": "R","next_state": 222},
+		{"write": 0,"direction": "R","next_state": 221},
 		//read 1
 		{"write": 1,"direction": "R","next_state": 222},
 		//read 2
@@ -6019,6 +6019,87 @@
 		null,
 		//read e
 		{"write": "x","direction": "L","next_state": 156}
+	],
+	//state 223
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 216},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 223},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 68}
+	],
+	//state 224
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 219},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 224},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 144}
+	],
+	//state 225
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 222},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 225},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 204}
 	],
 	[
 		//halt state (because it is last in the file)
