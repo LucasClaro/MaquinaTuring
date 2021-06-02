@@ -1,0 +1,1036 @@
+
+//Sample instruction set to divide a binary number by 2 (truncate remainder)
+[
+   //state 0
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 0},
+      //read 1
+      {"write": 1,"direction": "R","next_state": 0},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      {"write": "x","direction": "L","next_state": 1}
+   ],
+   //state 1
+   [
+      //read 0
+      {"write": "b","direction": "L","next_state": 2},
+      //read 1
+      {"write": "b","direction": "L ","next_state": 22},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      null 
+   ],
+   //state 2
+   [
+      //read 0
+      {"write": "b","direction": "L","next_state": 2},
+      //read 1
+      {"write": "z","direction": "L","next_state": 3},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      null 
+   ],
+   //state 3
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 4},
+      //read 1
+      {"write": "z","direction": "L","next_state": 3},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      {"write": "e","direction": "R","next_state": 4} 
+   ],
+   //state 4
+   [
+      //read 0
+      null,
+      //read 1
+      null,
+      //read b
+      {"write": "b","direction": "R","next_state": 4},
+      //read i
+      null,
+      //read a
+      {"write": "a","direction": "R","next_state": 4},
+      //read z
+      {"write": "z","direction": "R","next_state": 4},
+      //read x
+      {"write": "x","direction": "L","next_state": 5},
+      //read n
+      null,
+      //read e
+      null 
+   ],
+   //state 5
+   [
+      //read 0
+      null,
+      //read 1
+      null,
+      //read b
+      {"write": "i","direction": "L","next_state": 6},
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      null 
+   ],
+   //state 6
+   [
+      //read 0
+      null,
+      //read 1
+      null,
+      //read b
+      {"write": "b","direction": "L","next_state": 6},
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      {"write": "a","direction": "R","next_state": 7},
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      null 
+   ],
+   //state 7
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 7},
+      //read 1
+      null,
+      //read b
+      {"write": "b","direction": "R","next_state": 7},
+      //read i
+      {"write": "i","direction": "R","next_state": 7},
+      //read a
+      {"write": "a","direction": "R","next_state": 7},
+      //read z
+      null,
+      //read x
+      {"write": "x","direction": "R","next_state": 7},
+      //read n
+      null,
+      //read e
+      {"write": 0,"direction": "L","next_state": 8}
+   ],
+   //state 8
+   [
+      //read 0
+      {"write": 0,"direction": "L","next_state": 8},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      {"write": "x","direction": "L","next_state": 9},
+      //read n
+      null,
+      //read e
+      null
+   ],
+   //state 9
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 10},
+      //read 1
+      null,
+      //read b
+      {"write": "b","direction": "L","next_state": 9},
+      //read i
+      {"write": "i","direction": "L","next_state": 9},
+      //read a
+      {"write": "a","direction": "L","next_state": 9},
+      //read z
+      {"write": "a","direction": "R","next_state": 7},
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      {"write": "e","direction": "R","next_state": 10}
+   ],
+   //state 10
+   [
+      //read 0
+      null,
+      //read 1
+      null,
+      //read b
+      {"write": "b","direction": "R","next_state": 10},
+      //read i
+      {"write": "i","direction": "R","next_state": 10},
+      //read a
+      {"write": "z","direction": "R","next_state": 10},
+      //read z
+      null,
+      //read x
+      {"write": "x","direction": "L","next_state": 11},
+      //read n
+      null,
+      //read e
+      null
+   ],
+   //state 11
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 12},
+      //read 1
+      null,
+      //read b
+      {"write": "i","direction": "L","next_state": 6},
+      //read i
+      {"write": "i","direction": "L","next_state": 11},
+      //read a
+      null,
+      //read z
+      {"write": "z","direction": "L","next_state": 11},
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      {"write": "e","direction": "R","next_state": 42}
+   ],
+   //state 12
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 12},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      {"write": "i","direction": "R","next_state": 12},
+      //read a
+      null,
+      //read z
+      {"write": "z","direction": "R","next_state": 12},
+      //read x
+      {"write": "x","direction": "R","next_state": 12},
+      //read n
+      null,
+      //read e
+      {"write": "e","direction": "L","next_state": 13}
+   ],
+   //state 13
+   [
+      //read 0
+      {"write": 1,"direction": "L","next_state": 13},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      {"write": "n","direction": "L","next_state": 14},
+      //read n
+      null,
+      //read e
+      null
+   ],
+   //state 14
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 15},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      {"write": "n","direction": "L","next_state": 14},
+      //read a
+      null,
+      //read z
+      {"write": "n","direction": "L","next_state": 14},
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      null
+   ],
+   //state 15
+   [
+      //read 0
+      null,
+      //read 1
+      {"write": 1,"direction": "R","next_state": 15},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "n","direction": "R","next_state": 15},
+      //read e
+      {"write": "e","direction": "L","next_state": 16}
+   ],
+   //state 16
+   [
+      //read 0
+      null,
+      //read 1
+      {"write": "e","direction": "L","next_state": 17},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "e","direction": "L","next_state": 20},
+      //read e
+      null
+   ],
+   //state 17
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 21},
+      //read 1
+      {"write": 1,"direction": "L","next_state": 17},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "n","direction": "L","next_state": 18},
+      //read e
+      null
+   ],
+   //state 18
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 19},
+      //read 1
+      {"write": 1,"direction": "R","next_state": 19},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "n","direction": "L","next_state": 18},
+      //read e
+      null
+   ],
+   //state 19
+   [
+      //read 0
+      null,
+      //read 1
+      {"write": 1,"direction": "R","next_state": 19},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": 1,"direction": "R","next_state": 15},
+      //read e
+      null
+   ],
+   //state 20
+   [
+      //read 0
+      null,
+      //read 1
+      {"write": 1,"direction": "L","next_state": 0},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "e","direction": "L","next_state": 20},
+      //read e
+      null
+   ],
+   //state 21
+   [
+      //read 0
+      null,
+      //read 1
+      {"write": 1,"direction": "R","next_state": 21},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      {"write": 1,"direction": "L","next_state": 0}
+   ],
+   //state 22
+   [
+      //read 0
+      {"write": "z","direction": "L","next_state": 23},
+      //read 1
+      {"write": "b","direction": "L","next_state": 22},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      null 
+   ],
+   //state 23
+   [
+      //read 0
+      {"write": "z","direction": "L","next_state": 23},
+      //read 1
+      {"write": 1,"direction": "R","next_state": 24},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      {"write": "e","direction": "R","next_state": 24} 
+   ],
+   //state 24
+   [
+      //read 0
+      null,
+      //read 1
+      null,
+      //read b
+      {"write": "b","direction": "R","next_state": 24},
+      //read i
+      null,
+      //read a
+      {"write": "a","direction": "R","next_state": 24},
+      //read z
+      {"write": "z","direction": "R","next_state": 24},
+      //read x
+      {"write": "x","direction": "L","next_state": 25},
+      //read n
+      null,
+      //read e
+      null 
+   ],
+   //state 25
+   [
+      //read 0
+      null,
+      //read 1
+      null,
+      //read b
+      {"write": "i","direction": "L","next_state": 26},
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      null 
+   ],
+   //state 26
+   [
+      //read 0
+      null,
+      //read 1
+      null,
+      //read b
+      {"write": "b","direction": "L","next_state": 26},
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      {"write": "a","direction": "R","next_state": 27},
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      null 
+   ],
+   //state 27
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 27},
+      //read 1
+      null,
+      //read b
+      {"write": "b","direction": "R","next_state": 27},
+      //read i
+      {"write": "i","direction": "R","next_state": 27},
+      //read a
+      {"write": "a","direction": "R","next_state": 27},
+      //read z
+      null,
+      //read x
+      {"write": "x","direction": "R","next_state": 27},
+      //read n
+      null,
+      //read e
+      {"write": 0,"direction": "L","next_state": 28}
+   ],
+   //state 28
+   [
+      //read 0
+      {"write": 0,"direction": "L","next_state": 28},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      {"write": "x","direction": "L","next_state": 29},
+      //read n
+      null,
+      //read e
+      null
+   ],
+   //state 29
+   [
+      //read 0
+      null,
+      //read 1
+      {"write": 1,"direction": "R","next_state": 30},
+      //read b
+      {"write": "b","direction": "L","next_state": 29},
+      //read i
+      {"write": "i","direction": "L","next_state": 29},
+      //read a
+      {"write": "a","direction": "L","next_state": 29},
+      //read z
+      {"write": "a","direction": "R","next_state": 27},
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      {"write": "e","direction": "R","next_state": 30}
+   ],
+   //state 30
+   [
+      //read 0
+      null,
+      //read 1
+      null,
+      //read b
+      {"write": "b","direction": "R","next_state": 30},
+      //read i
+      {"write": "i","direction": "R","next_state": 30},
+      //read a
+      {"write": "z","direction": "R","next_state": 30},
+      //read z
+      null,
+      //read x
+      {"write": "x","direction": "L","next_state": 31},
+      //read n
+      null,
+      //read e
+      null
+   ],
+   //state 31
+   [
+      //read 0
+      null,
+      //read 1
+      {"write": 1,"direction": "R","next_state": 32},
+      //read b
+      {"write": "i","direction": "L","next_state": 26},
+      //read i
+      {"write": "i","direction": "L","next_state": 31},
+      //read a
+      null,
+      //read z
+      {"write": "z","direction": "L","next_state": 31},
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      {"write": "e","direction": "R","next_state": 42}
+   ],
+   //state 32
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 32},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      {"write": "i","direction": "R","next_state": 32},
+      //read a
+      null,
+      //read z
+      {"write": "z","direction": "R","next_state": 32},
+      //read x
+      {"write": "x","direction": "R","next_state": 32},
+      //read n
+      null,
+      //read e
+      {"write": "e","direction": "L","next_state": 33}
+   ],
+   //state 33
+   [
+      //read 0
+      {"write": 0,"direction": "L","next_state": 33},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      {"write": "n","direction": "L","next_state": 34},
+      //read n
+      null,
+      //read e
+      null
+   ],
+   //state 34
+   [
+      //read 0
+      null,
+      //read 1
+      {"write": 1,"direction": "R","next_state": 35},
+      //read b
+      null,
+      //read i
+      {"write": "n","direction": "L","next_state": 34},
+      //read a
+      null,
+      //read z
+      {"write": "n","direction": "L","next_state": 34},
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      null
+   ],
+   //state 35
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 35},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "n","direction": "R","next_state": 35},
+      //read e
+      {"write": "e","direction": "L","next_state": 36}
+   ],
+   //state 36
+   [
+      //read 0
+      {"write": "e","direction": "L","next_state": 37},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "e","direction": "L","next_state": 40},
+      //read e
+      null
+   ],
+   //state 37
+   [
+      //read 0
+      {"write": 0,"direction": "L","next_state": 37},
+      //read 1
+      {"write": 1,"direction": "R","next_state": 41},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "n","direction": "L","next_state": 38},
+      //read e
+      null
+   ],
+   //state 38
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 39},
+      //read 1
+      {"write": 1,"direction": "R","next_state": 39},
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "n","direction": "L","next_state": 38},
+      //read e
+      null
+   ],
+   //state 39
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 39},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": 0,"direction": "R","next_state": 35},
+      //read e
+      null
+   ],
+   //state 40
+   [
+      //read 0
+      {"write": 0,"direction": "L","next_state": 0},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "e","direction": "L","next_state": 40},
+      //read e
+      null
+   ],
+   //state 41
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 41},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      {"write": 0,"direction": "L","next_state": 0}
+   ],
+   //state 42
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 42},
+      //read 1
+      null,
+      //read b
+      {"write": "n","direction": "R","next_state": 42},
+      //read i
+      {"write": "n","direction": "R","next_state": 42},
+      //read a
+      {"write": "n","direction": "R","next_state": 42},
+      //read z
+      {"write": "n","direction": "R","next_state": 42},
+      //read x
+      {"write": "n","direction": "R","next_state": 42},
+      //read n
+      {"write": "n","direction": "R","next_state": 42},
+      //read e
+      {"write": "e","direction": "L","next_state": 43}
+   ],
+   //state 43
+   [
+      //read 0
+      {"write": "e","direction": "L","next_state": 44},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "e","direction": "L","next_state": 47},
+      //read e
+      null
+   ],
+   //state 44
+   [
+      //read 0
+      {"write": 0,"direction": "L","next_state": 44},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "n","direction": "L","next_state": 45},
+      //read e
+      {"write": "e","direction": "R","next_state": 48}
+   ],
+   //state 45
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 46},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "n","direction": "L","next_state": 45},
+      //read e
+      {"write": "e","direction": "R","next_state": 46}
+   ],
+   //state 46
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 46},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": 0,"direction": "R","next_state": 42},
+      //read e
+      null
+   ],
+   //state 47
+   [
+      //read 0
+      {"write": 0,"direction": "L","next_state": 49},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      {"write": "e","direction": "L","next_state": 47},
+      //read e
+      null
+   ],
+   //state 48
+   [
+      //read 0
+      {"write": 0,"direction": "R","next_state": 48},
+      //read 1
+      null,
+      //read b
+      null,
+      //read i
+      null,
+      //read a
+      null,
+      //read z
+      null,
+      //read x
+      null,
+      //read n
+      null,
+      //read e
+      {"write": 0,"direction": "L","next_state": 49}
+   ],
+   [
+      //halt state (because it is last in the file)
+   ]
+]

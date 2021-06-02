@@ -1,0 +1,6026 @@
+[
+	//state 0
+	[
+		//read 0
+		{"write": 2,"direction": "R","next_state": 0},
+		//read 1
+		{"write": 3,"direction": "R","next_state": 0},
+		//read 2
+		{"write": 2,"direction": "R","next_state": 0},
+		//read 3
+		{"write": 3,"direction": "R","next_state": 0},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "y","direction": "L","next_state": 1}
+	],
+	//state 1
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": "b","direction": "L","next_state": 2},
+		//read 3
+		{"write": "b","direction": "L","next_state": 78},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 2
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": "b","direction": "L","next_state": 2},
+		//read 3
+		{"write": "z","direction": "L","next_state": 3},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 3
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 4},
+		//read 3
+		{"write": "z","direction": "L","next_state": 3},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 4}
+	],
+	//state 4
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 4},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 4},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "L","next_state": 5},
+		//read e
+		null
+	],
+	//state 5
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 6},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 6
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 6},
+		//read i
+		null,
+		//read a
+		{"write": "a","direction": "L","next_state": 6},
+		//read z
+		{"write": "a","direction": "R","next_state": 7},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 7
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 7},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 7},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 7},
+		//read i
+		{"write": "i","direction": "R","next_state": 7},
+		//read a
+		{"write": "a","direction": "R","next_state": 7},
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 7},
+		//read e
+		{"write": 0,"direction": "L","next_state": 8}
+	],
+	//state 8
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 8},
+		//read 1
+		{"write": 1,"direction": "L","next_state": 8},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "L","next_state": 9},
+		//read e
+		null
+	],
+	//state 9
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 10},
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 9},
+		//read i
+		{"write": "i","direction": "L","next_state": 9},
+		//read a
+		{"write": "a","direction": "L","next_state": 9},
+		//read z
+		{"write": "a","direction": "R","next_state": 7},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 10}
+	],
+	//state 10
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 10},
+		//read i
+		{"write": "i","direction": "R","next_state": 10},
+		//read a
+		{"write": "z","direction": "R","next_state": 10},
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "L","next_state": 11},
+		//read e
+		null
+	],
+	//state 11
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 18},
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 12},
+		//read i
+		{"write": "i","direction": "L","next_state": 11},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "L","next_state": 11},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 154}
+	],
+	//state 12
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 12},
+		//read i
+		null,
+		//read a
+		{"write": "a","direction": "L","next_state": 12},
+		//read z
+		{"write": "a","direction": "R","next_state": 13},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 13
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 13},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 13},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 13},
+		//read i
+		{"write": "i","direction": "R","next_state": 13},
+		//read a
+		{"write": "a","direction": "R","next_state": 13},
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 13},
+		//read e
+		{"write": 1,"direction": "L","next_state": 14}
+	],
+	//state 14
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 14},
+		//read 1
+		{"write": 1,"direction": "L","next_state": 14},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "L","next_state": 15},
+		//read e
+		null
+	],
+	//state 15
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 16},
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 15},
+		//read i
+		{"write": "i","direction": "L","next_state": 15},
+		//read a
+		{"write": "a","direction": "L","next_state": 15},
+		//read z
+		{"write": "a","direction": "R","next_state": 13},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 16}
+	],
+	//state 16
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 16},
+		//read i
+		{"write": "i","direction": "R","next_state": 16},
+		//read a
+		{"write": "z","direction": "R","next_state": 16},
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "L","next_state": 17},
+		//read e
+		null
+	],
+	//state 17
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 18},
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 6},
+		//read i
+		{"write": "i","direction": "L","next_state": 17},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "L","next_state": 17},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 154}
+	],
+	//state 18
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "i","direction": "R","next_state": 18},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 18},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 214},
+		//read e
+		null
+	],
+	//state 19
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 19},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 19},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "x","direction": "L","next_state": 20}
+	],
+	//state 20
+	[
+		//read 0
+		{"write": "b","direction": "L","next_state": 21},
+		//read 1
+		{"write": "b","direction": "L","next_state": 41},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 21
+	[
+		//read 0
+		{"write": "b","direction": "L","next_state": 21},
+		//read 1
+		{"write": "z","direction": "L","next_state": 22},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 22
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 23},
+		//read 1
+		{"write": "z","direction": "L","next_state": 22},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 23},
+		//read e
+		null
+	],
+	//state 23
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 23},
+		//read i
+		null,
+		//read a
+		{"write": "a","direction": "R","next_state": 23},
+		//read z
+		{"write": "z","direction": "R","next_state": 23},
+		//read x
+		{"write": "x","direction": "L","next_state": 24},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 24
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 25},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 25
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 25},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		{"write": "a","direction": "R","next_state": 26},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 26
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 26},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 26},
+		//read i
+		{"write": "i","direction": "R","next_state": 26},
+		//read a
+		{"write": "a","direction": "R","next_state": 26},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "R","next_state": 26},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 27}
+	],
+	//state 27
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 27},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 28},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 28
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 29},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 28},
+		//read i
+		{"write": "i","direction": "L","next_state": 28},
+		//read a
+		{"write": "a","direction": "L","next_state": 28},
+		//read z
+		{"write": "a","direction": "R","next_state": 26},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 29},
+		//read e
+		null
+	],
+	//state 29
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 29},
+		//read i
+		{"write": "i","direction": "R","next_state": 29},
+		//read a
+		{"write": "z","direction": "R","next_state": 29},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 30},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 30
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 31},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 25},
+		//read i
+		{"write": "i","direction": "L","next_state": 30},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "L","next_state": 30},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 61},
+		//read e
+		null
+	],
+	//state 31
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 31},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "i","direction": "R","next_state": 31},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 31},
+		//read x
+		{"write": "x","direction": "R","next_state": 31},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 32}
+	],
+	//state 32
+	[
+		//read 0
+		{"write": 1,"direction": "L","next_state": 32},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "n","direction": "L","next_state": 33},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 33
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 34},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "n","direction": "L","next_state": 33},
+		//read a
+		null,
+		//read z
+		{"write": "n","direction": "L","next_state": 33},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 34
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 34},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "R","next_state": 34},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 35}
+	],
+	//state 35
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": "e","direction": "L","next_state": 36},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 39},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 36
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 40},
+		//read 1
+		{"write": 1,"direction": "L","next_state": 36},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 37},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 37
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 38},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 38},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 37},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 38
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 38},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 1,"direction": "R","next_state": 34},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 39
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "L","next_state": 19},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 39},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 40
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 40},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 1,"direction": "L","next_state": 19}
+	],
+	//state 41
+	[
+		//read 0
+		{"write": "z","direction": "L","next_state": 42},
+		//read 1
+		{"write": "b","direction": "L","next_state": 41},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 42
+	[
+		//read 0
+		{"write": "z","direction": "L","next_state": 42},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 43},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 43},
+		//read e
+		null
+	],
+	//state 43
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 43},
+		//read i
+		null,
+		//read a
+		{"write": "a","direction": "R","next_state": 43},
+		//read z
+		{"write": "z","direction": "R","next_state": 43},
+		//read x
+		{"write": "x","direction": "L","next_state": 44},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 44
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 45},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 45
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 45},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		{"write": "a","direction": "R","next_state": 46},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 46
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 46},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 46},
+		//read i
+		{"write": "i","direction": "R","next_state": 46},
+		//read a
+		{"write": "a","direction": "R","next_state": 46},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "R","next_state": 46},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 47}
+	],
+	//state 47
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 47},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 48},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 48
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 49},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 48},
+		//read i
+		{"write": "i","direction": "L","next_state": 48},
+		//read a
+		{"write": "a","direction": "L","next_state": 48},
+		//read z
+		{"write": "a","direction": "R","next_state": 46},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 49},
+		//read e
+		null
+	],
+	//state 49
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 49},
+		//read i
+		{"write": "i","direction": "R","next_state": 49},
+		//read a
+		{"write": "z","direction": "R","next_state": 49},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 50},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 50
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 51},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 45},
+		//read i
+		{"write": "i","direction": "L","next_state": 50},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "L","next_state": 50},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 61},
+		//read e
+		null
+	],
+	//state 51
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 51},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "i","direction": "R","next_state": 51},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 51},
+		//read x
+		{"write": "x","direction": "R","next_state": 51},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 52}
+	],
+	//state 52
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 52},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "n","direction": "L","next_state": 53},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 53
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 54},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "n","direction": "L","next_state": 53},
+		//read a
+		null,
+		//read z
+		{"write": "n","direction": "L","next_state": 53},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 54
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 54},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "R","next_state": 54},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 55}
+	],
+	//state 55
+	[
+		//read 0
+		{"write": "e","direction": "L","next_state": 56},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 59},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 56
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 56},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 60},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 57},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 57
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 58},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 58},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 57},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 58
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 58},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 0,"direction": "R","next_state": 54},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 59
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 19},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 59},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 60
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 60},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 19}
+	],
+	//state 61
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 61},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "n","direction": "R","next_state": 61},
+		//read i
+		{"write": "n","direction": "R","next_state": 61},
+		//read a
+		{"write": "n","direction": "R","next_state": 61},
+		//read z
+		{"write": "n","direction": "R","next_state": 61},
+		//read x
+		{"write": "n","direction": "R","next_state": 61},
+		//read n
+		{"write": "n","direction": "R","next_state": 61},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 62}
+	],
+	//state 62
+	[
+		//read 0
+		{"write": "e","direction": "L","next_state": 63},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 66},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 63
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 63},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 64},
+		//read y
+		{"write": "y","direction": "R","next_state": 67},
+		//read e
+		null
+	],
+	//state 64
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 65},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 64},
+		//read y
+		{"write": "y","direction": "R","next_state": 65},
+		//read e
+		null
+	],
+	//state 65
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 65},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 0,"direction": "R","next_state": 61},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 66
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 68},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 66},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 67
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 67},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 68}
+	],
+	//state 68
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 68},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 69}
+	],
+	//state 69
+	[
+		//read 0
+		{"write": 3,"direction": "L","next_state": 69},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "n","direction": "L","next_state": 70},
+		//read e
+		null
+	],
+	//state 70
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 71},
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "n","direction": "L","next_state": 70},
+		//read a
+		null,
+		//read z
+		{"write": "n","direction": "L","next_state": 70},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 71
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		{"write": 3,"direction": "R","next_state": 71},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "R","next_state": 71},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 72}
+	],
+	//state 72
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		{"write": "e","direction": "L","next_state": 73},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 76},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 73
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 77},
+		//read 3
+		{"write": 3,"direction": "L","next_state": 73},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 74},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 74
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 75},
+		//read 3
+		{"write": 3,"direction": "R","next_state": 75},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 74},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 75
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		{"write": 3,"direction": "R","next_state": 75},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 3,"direction": "R","next_state": 71},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 76
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		{"write": 3,"direction": "L","next_state": 0},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 76},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 77
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		{"write": 3,"direction": "R","next_state": 77},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 3,"direction": "L","next_state": 0}
+	],
+	//state 78
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": "z","direction": "L","next_state": 79},
+		//read 3
+		{"write": "b","direction": "L","next_state": 78},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 79
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": "z","direction": "L","next_state": 79},
+		//read 3
+		{"write": 3,"direction": "R","next_state": 80},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 80}
+	],
+	//state 80
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 80},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 80},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "L","next_state": 81},
+		//read e
+		null
+	],
+	//state 81
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 82},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 82
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 82},
+		//read i
+		null,
+		//read a
+		{"write": "a","direction": "L","next_state": 82},
+		//read z
+		{"write": "a","direction": "R","next_state": 83},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 83
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 83},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 83},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 83},
+		//read i
+		{"write": "i","direction": "R","next_state": 83},
+		//read a
+		{"write": "a","direction": "R","next_state": 83},
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 83},
+		//read e
+		{"write": 0,"direction": "L","next_state": 84}
+	],
+	//state 84
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 84},
+		//read 1
+		{"write": 1,"direction": "L","next_state": 84},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "L","next_state": 85},
+		//read e
+		null
+	],
+	//state 85
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		{"write": 3,"direction": "R","next_state": 86},
+		//read b
+		{"write": "b","direction": "L","next_state": 85},
+		//read i
+		{"write": "i","direction": "L","next_state": 85},
+		//read a
+		{"write": "a","direction": "L","next_state": 85},
+		//read z
+		{"write": "a","direction": "R","next_state": 83},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 86}
+	],
+	//state 86
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 86},
+		//read i
+		{"write": "i","direction": "R","next_state": 86},
+		//read a
+		{"write": "z","direction": "R","next_state": 86},
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "L","next_state": 87},
+		//read e
+		null
+	],
+	//state 87
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		{"write": 3,"direction": "R","next_state": 94},
+		//read b
+		{"write": "i","direction": "L","next_state": 88},
+		//read i
+		{"write": "i","direction": "L","next_state": 87},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "L","next_state": 87},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 154}
+	],
+	//state 88
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 88},
+		//read i
+		null,
+		//read a
+		{"write": "a","direction": "L","next_state": 88},
+		//read z
+		{"write": "a","direction": "R","next_state": 89},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 89
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 89},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 89},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 89},
+		//read i
+		{"write": "i","direction": "R","next_state": 89},
+		//read a
+		{"write": "a","direction": "R","next_state": 89},
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 89},
+		//read e
+		{"write": 1,"direction": "L","next_state": 90}
+	],
+	//state 90
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 90},
+		//read 1
+		{"write": 1,"direction": "L","next_state": 90},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "L","next_state": 91},
+		//read e
+		null
+	],
+	//state 91
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		{"write": 3,"direction": "R","next_state": 92},
+		//read b
+		{"write": "b","direction": "L","next_state": 91},
+		//read i
+		{"write": "i","direction": "L","next_state": 91},
+		//read a
+		{"write": "a","direction": "L","next_state": 91},
+		//read z
+		{"write": "a","direction": "R","next_state": 89},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 92}
+	],
+	//state 92
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 92},
+		//read i
+		{"write": "i","direction": "R","next_state": 92},
+		//read a
+		{"write": "z","direction": "R","next_state": 92},
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "L","next_state": 93},
+		//read e
+		null
+	],
+	//state 93
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		{"write": 3,"direction": "R","next_state": 94},
+		//read b
+		{"write": "i","direction": "L","next_state": 82},
+		//read i
+		{"write": "i","direction": "L","next_state": 93},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "L","next_state": 93},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 154}
+	],
+	//state 94
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "i","direction": "R","next_state": 94},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 94},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 217},
+		//read e
+		null
+	],
+	//state 95
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 95},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 95},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "x","direction": "L","next_state": 96}
+	],
+	//state 96
+	[
+		//read 0
+		{"write": "b","direction": "L","next_state": 97},
+		//read 1
+		{"write": "b","direction": "L","next_state": 117},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 97
+	[
+		//read 0
+		{"write": "b","direction": "L","next_state": 97},
+		//read 1
+		{"write": "z","direction": "L","next_state": 98},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 98
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 99},
+		//read 1
+		{"write": "z","direction": "L","next_state": 98},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 99},
+		//read e
+		null
+	],
+	//state 99
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 99},
+		//read i
+		null,
+		//read a
+		{"write": "a","direction": "R","next_state": 99},
+		//read z
+		{"write": "z","direction": "R","next_state": 99},
+		//read x
+		{"write": "x","direction": "L","next_state": 100},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 100
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 101},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 101
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 101},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		{"write": "a","direction": "R","next_state": 102},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 102
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 102},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 102},
+		//read i
+		{"write": "i","direction": "R","next_state": 102},
+		//read a
+		{"write": "a","direction": "R","next_state": 102},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "R","next_state": 102},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 103}
+	],
+	//state 103
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 103},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 104},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 104
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 105},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 104},
+		//read i
+		{"write": "i","direction": "L","next_state": 104},
+		//read a
+		{"write": "a","direction": "L","next_state": 104},
+		//read z
+		{"write": "a","direction": "R","next_state": 102},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 105},
+		//read e
+		null
+	],
+	//state 105
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 105},
+		//read i
+		{"write": "i","direction": "R","next_state": 105},
+		//read a
+		{"write": "z","direction": "R","next_state": 105},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 106},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 106
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 107},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 101},
+		//read i
+		{"write": "i","direction": "L","next_state": 106},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "L","next_state": 106},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 137},
+		//read e
+		null
+	],
+	//state 107
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 107},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "i","direction": "R","next_state": 107},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 107},
+		//read x
+		{"write": "x","direction": "R","next_state": 107},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 108}
+	],
+	//state 108
+	[
+		//read 0
+		{"write": 1,"direction": "L","next_state": 108},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "n","direction": "L","next_state": 109},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 109
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 110},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "n","direction": "L","next_state": 109},
+		//read a
+		null,
+		//read z
+		{"write": "n","direction": "L","next_state": 109},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 110
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 110},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "R","next_state": 110},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 111}
+	],
+	//state 111
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": "e","direction": "L","next_state": 112},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 115},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 112
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 116},
+		//read 1
+		{"write": 1,"direction": "L","next_state": 112},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 113},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 113
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 114},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 114},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 113},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 114
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 114},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 1,"direction": "R","next_state": 110},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 115
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "L","next_state": 95},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 115},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 116
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 116},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 1,"direction": "L","next_state": 95}
+	],
+	//state 117
+	[
+		//read 0
+		{"write": "z","direction": "L","next_state": 118},
+		//read 1
+		{"write": "b","direction": "L","next_state": 117},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 118
+	[
+		//read 0
+		{"write": "z","direction": "L","next_state": 118},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 119},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 119},
+		//read e
+		null
+	],
+	//state 119
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 119},
+		//read i
+		null,
+		//read a
+		{"write": "a","direction": "R","next_state": 119},
+		//read z
+		{"write": "z","direction": "R","next_state": 119},
+		//read x
+		{"write": "x","direction": "L","next_state": 120},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 120
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 121},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 121
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 121},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		{"write": "a","direction": "R","next_state": 122},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 122
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 122},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 122},
+		//read i
+		{"write": "i","direction": "R","next_state": 122},
+		//read a
+		{"write": "a","direction": "R","next_state": 122},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "R","next_state": 122},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 123}
+	],
+	//state 123
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 123},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 124},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 124
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 125},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 124},
+		//read i
+		{"write": "i","direction": "L","next_state": 124},
+		//read a
+		{"write": "a","direction": "L","next_state": 124},
+		//read z
+		{"write": "a","direction": "R","next_state": 122},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 125},
+		//read e
+		null
+	],
+	//state 125
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 125},
+		//read i
+		{"write": "i","direction": "R","next_state": 125},
+		//read a
+		{"write": "z","direction": "R","next_state": 125},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 126},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 126
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 127},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 121},
+		//read i
+		{"write": "i","direction": "L","next_state": 126},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "L","next_state": 126},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 137},
+		//read e
+		null
+	],
+	//state 127
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 127},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "i","direction": "R","next_state": 127},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 127},
+		//read x
+		{"write": "x","direction": "R","next_state": 127},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 128}
+	],
+	//state 128
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 128},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "n","direction": "L","next_state": 129},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 129
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 130},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "n","direction": "L","next_state": 129},
+		//read a
+		null,
+		//read z
+		{"write": "n","direction": "L","next_state": 129},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 130
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 130},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "R","next_state": 130},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 131}
+	],
+	//state 131
+	[
+		//read 0
+		{"write": "e","direction": "L","next_state": 132},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 135},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 132
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 132},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 136},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 133},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 133
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 134},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 134},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 133},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 134
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 134},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 0,"direction": "R","next_state": 130},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 135
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 95},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 135},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 136
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 136},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 95}
+	],
+	//state 137
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 137},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "n","direction": "R","next_state": 137},
+		//read i
+		{"write": "n","direction": "R","next_state": 137},
+		//read a
+		{"write": "n","direction": "R","next_state": 137},
+		//read z
+		{"write": "n","direction": "R","next_state": 137},
+		//read x
+		{"write": "n","direction": "R","next_state": 137},
+		//read n
+		{"write": "n","direction": "R","next_state": 137},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 138}
+	],
+	//state 138
+	[
+		//read 0
+		{"write": "e","direction": "L","next_state": 139},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 142},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 139
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 139},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 140},
+		//read y
+		{"write": "y","direction": "R","next_state": 143},
+		//read e
+		null
+	],
+	//state 140
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 141},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 140},
+		//read y
+		{"write": "y","direction": "R","next_state": 141},
+		//read e
+		null
+	],
+	//state 141
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 141},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 0,"direction": "R","next_state": 137},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 142
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 144},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 142},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 143
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 143},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 144}
+	],
+	//state 144
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 144},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 145}
+	],
+	//state 145
+	[
+		//read 0
+		{"write": 2,"direction": "L","next_state": 145},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "n","direction": "L","next_state": 146},
+		//read e
+		null
+	],
+	//state 146
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		{"write": 3,"direction": "R","next_state": 147},
+		//read b
+		null,
+		//read i
+		{"write": "n","direction": "L","next_state": 146},
+		//read a
+		null,
+		//read z
+		{"write": "n","direction": "L","next_state": 146},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 147
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 147},
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "R","next_state": 147},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 148}
+	],
+	//state 148
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": "e","direction": "L","next_state": 149},
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 152},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 149
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "L","next_state": 149},
+		//read 3
+		{"write": 3,"direction": "R","next_state": 153},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 150},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 150
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 151},
+		//read 3
+		{"write": 3,"direction": "R","next_state": 151},
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 150},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 151
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 151},
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 2,"direction": "R","next_state": 147},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 152
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "L","next_state": 0},
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 152},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 153
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		{"write": 2,"direction": "R","next_state": 153},
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 2,"direction": "L","next_state": 0}
+	],
+	//state 154
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "i","direction": "R","next_state": 154},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 154},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 220},
+		//read e
+		null
+	],
+	//state 155
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 155},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 155},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "x","direction": "L","next_state": 156}
+	],
+	//state 156
+	[
+		//read 0
+		{"write": "b","direction": "L","next_state": 157},
+		//read 1
+		{"write": "b","direction": "L","next_state": 177},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 157
+	[
+		//read 0
+		{"write": "b","direction": "L","next_state": 157},
+		//read 1
+		{"write": "z","direction": "L","next_state": 158},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 158
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 159},
+		//read 1
+		{"write": "z","direction": "L","next_state": 158},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 159},
+		//read e
+		null
+	],
+	//state 159
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 159},
+		//read i
+		null,
+		//read a
+		{"write": "a","direction": "R","next_state": 159},
+		//read z
+		{"write": "z","direction": "R","next_state": 159},
+		//read x
+		{"write": "x","direction": "L","next_state": 160},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 160
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 161},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 161
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 161},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		{"write": "a","direction": "R","next_state": 162},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 162
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 162},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 162},
+		//read i
+		{"write": "i","direction": "R","next_state": 162},
+		//read a
+		{"write": "a","direction": "R","next_state": 162},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "R","next_state": 162},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 163}
+	],
+	//state 163
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 163},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 164},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 164
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 165},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 164},
+		//read i
+		{"write": "i","direction": "L","next_state": 164},
+		//read a
+		{"write": "a","direction": "L","next_state": 164},
+		//read z
+		{"write": "a","direction": "R","next_state": 162},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 165},
+		//read e
+		null
+	],
+	//state 165
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 165},
+		//read i
+		{"write": "i","direction": "R","next_state": 165},
+		//read a
+		{"write": "z","direction": "R","next_state": 165},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 166},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 166
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 167},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 161},
+		//read i
+		{"write": "i","direction": "L","next_state": 166},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "L","next_state": 166},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 197},
+		//read e
+		null
+	],
+	//state 167
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 167},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "i","direction": "R","next_state": 167},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 167},
+		//read x
+		{"write": "x","direction": "R","next_state": 167},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 168}
+	],
+	//state 168
+	[
+		//read 0
+		{"write": 1,"direction": "L","next_state": 168},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "n","direction": "L","next_state": 169},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 169
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 170},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "n","direction": "L","next_state": 169},
+		//read a
+		null,
+		//read z
+		{"write": "n","direction": "L","next_state": 169},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 170
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 170},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "R","next_state": 170},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 171}
+	],
+	//state 171
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": "e","direction": "L","next_state": 172},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 175},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 172
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 176},
+		//read 1
+		{"write": 1,"direction": "L","next_state": 172},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 173},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 173
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 174},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 174},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 173},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 174
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 174},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 1,"direction": "R","next_state": 170},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 175
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "L","next_state": 155},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 175},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 176
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 176},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 1,"direction": "L","next_state": 155}
+	],
+	//state 177
+	[
+		//read 0
+		{"write": "z","direction": "L","next_state": 178},
+		//read 1
+		{"write": "b","direction": "L","next_state": 177},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 178
+	[
+		//read 0
+		{"write": "z","direction": "L","next_state": 178},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 179},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 179},
+		//read e
+		null
+	],
+	//state 179
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 179},
+		//read i
+		null,
+		//read a
+		{"write": "a","direction": "R","next_state": 179},
+		//read z
+		{"write": "z","direction": "R","next_state": 179},
+		//read x
+		{"write": "x","direction": "L","next_state": 180},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 180
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 181},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 181
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 181},
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		{"write": "a","direction": "R","next_state": 182},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 182
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 182},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 182},
+		//read i
+		{"write": "i","direction": "R","next_state": 182},
+		//read a
+		{"write": "a","direction": "R","next_state": 182},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "R","next_state": 182},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 183}
+	],
+	//state 183
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 183},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 184},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 184
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 185},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "L","next_state": 184},
+		//read i
+		{"write": "i","direction": "L","next_state": 184},
+		//read a
+		{"write": "a","direction": "L","next_state": 184},
+		//read z
+		{"write": "a","direction": "R","next_state": 182},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 185},
+		//read e
+		null
+	],
+	//state 185
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "b","direction": "R","next_state": 185},
+		//read i
+		{"write": "i","direction": "R","next_state": 185},
+		//read a
+		{"write": "z","direction": "R","next_state": 185},
+		//read z
+		null,
+		//read x
+		{"write": "x","direction": "L","next_state": 186},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 186
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 187},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "i","direction": "L","next_state": 181},
+		//read i
+		{"write": "i","direction": "L","next_state": 186},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "L","next_state": 186},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "y","direction": "R","next_state": 197},
+		//read e
+		null
+	],
+	//state 187
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 187},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "i","direction": "R","next_state": 187},
+		//read a
+		null,
+		//read z
+		{"write": "z","direction": "R","next_state": 187},
+		//read x
+		{"write": "x","direction": "R","next_state": 187},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 188}
+	],
+	//state 188
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 188},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		{"write": "n","direction": "L","next_state": 189},
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 189
+	[
+		//read 0
+		null,
+		//read 1
+		{"write": 1,"direction": "R","next_state": 190},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "n","direction": "L","next_state": 189},
+		//read a
+		null,
+		//read z
+		{"write": "n","direction": "L","next_state": 189},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 190
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 190},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "R","next_state": 190},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 191}
+	],
+	//state 191
+	[
+		//read 0
+		{"write": "e","direction": "L","next_state": 192},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 195},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 192
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 192},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 196},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 193},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 193
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 194},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 194},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 193},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 194
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 194},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 0,"direction": "R","next_state": 190},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 195
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 155},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 195},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 196
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 196},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 155}
+	],
+	//state 197
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 197},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		{"write": "n","direction": "R","next_state": 197},
+		//read i
+		{"write": "n","direction": "R","next_state": 197},
+		//read a
+		{"write": "n","direction": "R","next_state": 197},
+		//read z
+		{"write": "n","direction": "R","next_state": 197},
+		//read x
+		{"write": "n","direction": "R","next_state": 197},
+		//read n
+		{"write": "n","direction": "R","next_state": 197},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 198}
+	],
+	//state 198
+	[
+		//read 0
+		{"write": "e","direction": "L","next_state": 199},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 202},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 199
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 199},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 200},
+		//read y
+		{"write": "y","direction": "R","next_state": 203},
+		//read e
+		null
+	],
+	//state 200
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 201},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 200},
+		//read y
+		{"write": "y","direction": "R","next_state": 201},
+		//read e
+		null
+	],
+	//state 201
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 201},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 0,"direction": "R","next_state": 197},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 202
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 204},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 202},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 203
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 203},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 204}
+	],
+	//state 204
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 204},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 205}
+	],
+	//state 205
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 205},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		{"write": "n","direction": "L","next_state": 206},
+		//read e
+		null
+	],
+	//state 206
+	[
+		//read 0
+		null,
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		{"write": "n","direction": "L","next_state": 206},
+		//read a
+		null,
+		//read z
+		{"write": "n","direction": "L","next_state": 206},
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 207}
+	],
+	//state 207
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 207},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "R","next_state": 207},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 208}
+	],
+	//state 208
+	[
+		//read 0
+		{"write": "e","direction": "L","next_state": 209},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 212},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 209
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 209},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 210},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 213}
+	],
+	//state 210
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 211},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "n","direction": "L","next_state": 210},
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "R","next_state": 211}
+	],
+	//state 211
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 211},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": 0,"direction": "R","next_state": 207},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 212
+	[
+		//read 0
+		{"write": 0,"direction": "L","next_state": 223},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		{"write": "e","direction": "L","next_state": 212},
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 213
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 213},
+		//read 1
+		null,
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": 0,"direction": "L","next_state": 223}
+	],
+	//state 214
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 215},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 215},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 215
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 216},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 216},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 68}
+	],
+	//state 216
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 216},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 216},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "x","direction": "L","next_state": 20}
+	],
+	//state 217
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 218},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 218},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 218
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 219},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 219},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 144}
+	],
+	//state 219
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 219},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 219},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "x","direction": "L","next_state": 96}
+	],
+	//state 220
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 221},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 221},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		null
+	],
+	//state 221
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 222},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 222},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "e","direction": "L","next_state": 204}
+	],
+	//state 222
+	[
+		//read 0
+		{"write": 0,"direction": "R","next_state": 222},
+		//read 1
+		{"write": 1,"direction": "R","next_state": 222},
+		//read 2
+		null,
+		//read 3
+		null,
+		//read b
+		null,
+		//read i
+		null,
+		//read a
+		null,
+		//read z
+		null,
+		//read x
+		null,
+		//read n
+		null,
+		//read y
+		null,
+		//read e
+		{"write": "x","direction": "L","next_state": 156}
+	],
+	[
+		//halt state (because it is last in the file)
+	]
+]
